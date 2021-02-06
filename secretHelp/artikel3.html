@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/master.css">
+  <title> Interaction Design </title>
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li> <a href="index.html" > Artikel 1 </a> </li>
+      <li> <a href="artikel2.html" > Artikel 2 </a> </li>
+      <li> <a href="." > Artikel 3 </a> </li>
+    </ul>
+  </nav>
+  <main class="container">
+    <article>
+      <figure>
+        <img src="Images/MIT.jpg" alt="Demonstratie welke data er bekeken wordt">
+        <figcaption> <i>MIT researchers have developed a deep learning-based algorithm to detect anomalies in time series data.</i>
+        </figcaption>
+      </figure>
+      <h1> Method finds hidden warning signals in measurements collected over time</h1>
+      <p> A new deep-learning algorithm could provide advanced notice when systems — from satellites to data centers — are falling out of whack.</p>
+      <p> When you’re responsible for a multimillion-dollar satellite hurtling through space at thousands of miles per hour, you want to be sure it’s running smoothly. And time series can help. </p>
+      <p> A time series is simply a record of a measurement taken repeatedly over time. It can keep track of a system’s long-term trends and short-term blips. Examples include the infamous Covid-19 curve of new daily cases and the Keeling curve that has tracked atmospheric carbon dioxide concentrations since 1958. In the age of big data, “time series are collected all over the place, from satellites to turbines,” says Kalyan Veeramachaneni. “All that machinery has sensors that collect these time series about how they’re functioning.” </p>
+      <p> But analyzing those time series, and flagging anomalous data points in them, can be tricky. Data can be noisy. If a satellite operator sees a string of high temperature readings, how do they know whether it’s a harmless fluctuation or a sign that the satellite is about to overheat? </p>
+      <p> That’s a problem Veeramachaneni, who leads the Data-to-AI group in MIT’s Laboratory for Information and Decision Systems, hopes to solve. The group has developed a new, deep-learning-based method of flagging anomalies in time series data. Their approach, called TadGAN, outperformed competing methods and could help operators detect and respond to major changes in a range of high-value systems, from a satellite flying through space to a computer server farm buzzing in a basement. </p>
+      <p> The research will be presented at this month’s IEEE BigData conference. The paper’s authors include Data-to-AI group members Veeramachaneni, postdoc Dongyu Liu, visiting research student Alexander Geiger, and master’s student Sarah Alnegheimish, as well as Alfredo Cuesta-Infante of Spain’s Rey Juan Carlos University. </p>
+      <section>
+        <h3> High stakes </h3>
+        <p> For a system as complex as a satellite, time series analysis must be automated. The satellite company SES, which is collaborating with Veeramachaneni, receives a flood of time series from its communications satellites — about 30,000 unique parameters per spacecraft. Human operators in SES’ control room can only keep track of a fraction of those time series as they blink past on the screen. For the rest, they rely on an alarm system to flag out-of-range values. “So they said to us, ‘Can you do better?’” says Veeramachaneni. The company wanted his team to use deep learning to analyze all those time series and flag any unusual behavior. </p>
+        <p> The stakes of this request are high: If the deep learning algorithm fails to detect an anomaly, the team could miss an opportunity to fix things. But if it rings the alarm every time there’s a noisy data point, human reviewers will waste their time constantly checking up on the algorithm that cried wolf. “So we have these two challenges,” says Liu. “And we need to balance them.” </p>
+        <p> Rather than strike that balance solely for satellite systems, the team endeavored to create a more general framework for anomaly detection — one that could be applied across industries. They turned to deep-learning systems called generative adversarial networks (GANs), often used for image analysis. </p>
+        <p> A <abbr title="generative adversarial networks">GAN </abbr> consists of a pair of neural networks. One network, the “generator,” creates fake images, while the second network, the “discriminator,” processes images and tries to determine whether they’re real images or fake ones produced by the generator. Through many rounds of this process, the generator learns from the discriminator’s feedback and becomes adept at creating hyper-realistic fakes. The technique is deemed “unsupervised” learning, since it doesn’t require a prelabeled dataset where images come tagged with their subjects. (Large labeled datasets can be hard to come by.) </p>
+        <p> The team adapted this <abbr title="generative adversarial networks">GAN </abbr> approach for time series data. “From this training strategy, our model can tell which data points are normal and which are anomalous,” says Liu. It does so by checking for discrepancies — possible anomalies — between the real time series and the fake GAN-generated time series. But the team found that <abbr title="generative adversarial networks">GANs </abbr> alone weren’t sufficient for anomaly detection in time series, because they can fall short in pinpointing the real time series segment against which the fake ones should be compared. As a result, “if you use <abbr title="generative adversarial networks">GAN </abbr> alone, you’ll create a lot of false positives,” says Veeramachaneni. </p>
+        <p> To guard against false positives, the team supplemented their <abbr title="generative adversarial networks">GAN </abbr> with an algorithm called an autoencoder — another technique for unsupervised deep learning. In contrast to <abbr title="generative adversarial networks">GANs' </abbr> tendency to cry wolf, autoencoders are more prone to miss true anomalies. That’s because autoencoders tend to capture too many patterns in the time series, sometimes interpreting an actual anomaly as a harmless fluctuation — a problem called “overfitting.” By combining a <abbr title="generative adversarial networks">GAN </abbr> with an autoencoder, the researchers crafted an anomaly detection system that struck the perfect balance: TadGAN is vigilant, but it doesn’t raise too many false alarms. </p>
+      </section>
+      <section>
+        <h3> Standing the test of time series </h3>
+        <p> Plus, TadGAN beat the competition. The traditional approach to time series forecasting, called ARIMA, was developed in the 1970s. “We wanted to see how far we’ve come, and whether deep learning models can actually improve on this classical method,” says Alnegheimish. </p>
+        <p> The team ran anomaly detection tests on 11 datasets, pitting ARIMA against TadGAN and seven other methods, including some developed by companies like Amazon and Microsoft. TadGAN outperformed ARIMA in anomaly detection for eight of the 11 datasets. The second-best algorithm, developed by Amazon, only beat ARIMA for six datasets. </p>
+        <p> Alnegheimish emphasized that their goal was not only to develop a top-notch anomaly detection algorithm, but also to make it widely useable. “We all know that AI suffers from reproducibility issues,” she says. The team has made TadGAN’s code freely available, and they issue periodic updates. Plus, they developed a benchmarking system for users to compare the performance of different anomaly detection models. </p>
+        <p> “This benchmark is open source, so someone can go try it out. They can add their own model if they want to,” says Alnegheimish. “We want to mitigate the stigma around AI not being reproducible. We want to ensure everything is sound.” </p>
+        <p> Veeramachaneni hopes TadGAN will one day serve a wide variety of industries, not just satellite companies. For example, it could be used to monitor the performance of computer apps that have become central to the modern economy. “To run a lab, I have 30 apps. Zoom, Slack, Github — you name it, I have it,” he says. “And I’m relying on them all to work seamlessly and forever.” The same goes for millions of users worldwide. </p>
+        <p> TadGAN could help companies like Zoom monitor time series signals in their data center — like CPU usage or temperature — to help prevent service breaks, which could threaten a company’s market share. In future work, the team plans to package TadGAN in a user interface, to help bring state-of-the-art time series analysis to anyone who needs it. </p>
+        <p> This research was funded by and completed in collaboration with SES. </p>
+      </section>
+      <details>
+        <summary> Artikel over de hoe een methode dingen kan constateren die huidige algoritmes missen. </summary>
+        <p> Artikel is overgenomen voor educatie. Van news.mit.edu </p>
+        <a href="https://news.mit.edu/2020/warning-time-measurements-ai-1217"> Link naar het artikel van news.mit.edu</a>
+      </details>
+    </article>
+  </main>
+</body>
+</html>
