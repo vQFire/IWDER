@@ -114,11 +114,15 @@
                     within our own web page). You will always see the ‘a’ element used with the href attribute to tell
                     the browser what address you want the link to point to.
                 </p>
-                <img src="images/html_css_fundamentals/anchor_example.png" alt="Anchor code example">
+                <figure>
+                    <img src="images/html_css_fundamentals/anchor_example.png" alt="Anchor code example">
+                </figure>
                 <blockquote>
                     <code>&#60;img&#62;</code>
                 </blockquote>
-                <img src="images/html_css_fundamentals/img_example.png" alt="Image code example">
+                <figure>
+                    <img src="images/html_css_fundamentals/img_example.png" alt="Image code example">
+                </figure>
                 <p>
                     This element will display an image on the screen. It will always have an ‘src’ attribute which
                     points to the address of the image to be displayed. NOTE: img tags can be self-closing, as in they
@@ -140,7 +144,9 @@
                     represent the items to appear in the list. Any other elements can appear in an
                     <code>&#60;li&#62;</code>.
                 </p>
-                <img src="images/html_css_fundamentals/list_example.png" alt="List code example">
+                <figure>
+                    <img src="images/html_css_fundamentals/list_example.png" alt="List code example">
+                </figure>
                 <h3>Nesting Elements and Indentation</h3>
                 <p>
                     We’ve seen in previous examples that we can nest elements inside of tags. In fact, this is a major
@@ -229,7 +235,9 @@
                     We apply these selectors
                     to the <abbr>HTML</abbr> tags themselves in the form of an attribute:
                 </p>
-                <img src="images/html_css_fundamentals/id_example.png" alt="Id or class code example">
+                <figure>
+                    <img src="images/html_css_fundamentals/id_example.png" alt="Id or class html code example">
+                </figure>
                 <blockquote class="large_quote">
                     <p><strong><code>Id</code>s:</strong> are titles that can only appear on a single element. Think of
                         it as you would your driver’s license number. ONLY you have that one number.</p>
@@ -239,6 +247,130 @@
                     <p><strong>Individual elements:</strong> We do not need to add anything to use every element of a
                         certain type as a selector. <abbr>CSS</abbr> does that for us already.</p>
                 </blockquote>
+                <h3>Anatomy of Styling Rules (Syntax)</h3>
+                <p>
+                    Now that we have our selectors in place we need to tell the browser what to do with those selectors.
+                    Inside of our style tags, we will insert the rules. Classes will always begin with <code>.</code>,
+                    and <abbr>Ids</abbr> will
+                    always begin with #. Elements will begin with neither and just have the element name. After the name
+                    of the selector, we will use braces <code>(“{}”)</code> to hold our rules to that one selector.
+                </p>
+                <figure>
+                    <img src="images/html_css_fundamentals/class_id_example.png" alt="Id or class style code example">
+                </figure>
+                <p>
+                    Styling rules will need to adhere to a certain syntax in our <abbr>CSS</abbr> so that the browser
+                    knows how to
+                    read them properly. Within the braces, we will then have the name of the property, a colon(“:”), and
+                    the value of the rule. This will be followed by a semicolon(“;”).
+                </p>
+                <figure>
+                    <img src="images/html_css_fundamentals/css_example.png" alt="CSS code example">
+                </figure>
+                <h3>Styling Rules</h3>
+                <p>
+                    Now that we have some <abbr>HTML</abbr> elements selected, we can begin to add styling. There are a
+                    LOT of
+                    different ways you can style an object. You can control how big or small it is, what color it is,
+                    where it is placed on the screen, or even if it is visible or not. We will go over some of the most
+                    common styling properties and how to use them.
+                </p>
+                <blockquote>
+                    <code>background</code> or <code>background-color</code>
+                </blockquote>
+                <p>
+                    Background can be set to a variety of rules. Most common would be setting the background to a color
+                    or an image. Both are displayed below. If you want to be more explicit, you can use the property
+                    background-color to only set the color of the background.
+                </p>
+                <figure>
+                    <img src="images/html_css_fundamentals/css_background_example.png"
+                         alt="CSS background code example">
+                </figure>
+                <p>
+                    Color is used for text only. It will set the color of your text.
+                </p>
+                <blockquote>
+                    <code>font-size</code>
+                </blockquote>
+                <p>
+                    We can’t use width or height for text, but we can determine the size of the font used. You can use
+                    any size unit here that you would use with a font in a word processor (px, em, in, and etc). Px or
+                    pixel is the most popular.
+                </p>
+                <h3>Introduction to the Box Model</h3>
+                <p>
+                    We can consider all html elements to be boxes. The make-up of each box is the content, padding,
+                    border, and margin. This is known as the Box Model.
+                </p>
+                <figure>
+                    <img src="images/html_css_fundamentals/box_model_example.gif"
+                         alt="Box model example">
+                </figure>
+                <blockquote>
+                    <code>height</code> and <code>width</code>
+                </blockquote>
+                <p>
+                    We can tell the browser exactly how wide and how tall we want our element (content) to be. This is
+                    used in <code>div</code>s, <code>img</code>s, and other height-based elements (in order to determine
+                    the size of text, we will
+                    need to use a different styling property). Size values can be in lots of different measures, but the
+                    most common is the pixel (“px”).
+                </p>
+                <figure>
+                    <img src="images/html_css_fundamentals/CSS_sizing_example.png"
+                         alt="CSS sizing code example">
+                </figure>
+                <blockquote>
+                    <code>margin</code>
+                </blockquote>
+                <p>
+                    The margin is an invisible area that surrounds your element. This is the outermost area in what we
+                    refer to as the <code>box model</code>
+                </p>
+                <blockquote>
+                    <code>border</code>
+                </blockquote>
+                <p>
+                    Border will set a border around your element. You can determine the size, color, and style of the
+                    border. It will be set up in this order: width, style, color (a list of border styles can be found
+                    here: <a href="https//developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/border</a>)
+                    The border is outside the padding,
+                    but inside the margin.
+                </p>
+                <figure>
+                    <img src="images/html_css_fundamentals/css_border_example.png"
+                         alt="CSS border code example">
+                </figure>
+                <blockquote>
+                    <code>padding</code>
+                </blockquote>
+                <p>
+                    The padding is the transparent area between the border and the content. It is very similar to the
+                    margin.
+                </p>
+                <h3>Dig Deeper</h3>
+                <ul>
+                    <li><a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy: Learn CSS</a> A
+                        beginners CSS tutorial
+                    </li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN: CSS</a> MDN CSS
+                        documentation
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <p>After complete the project, share your codepen link, so I can review it <abbr>:)</abbr></p>
+                <ul>
+                    <li><a href="https://codepen.io/jakepintu/pen/LYYJyyz" target="_blank">HTML and CSS</a></li>
+                </ul>
+                <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="iampika" data-slug-hash="LYYJyyz" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML and CSS Fundamentals">
+  <span>See the Pen <a href="https://codepen.io/iampika/pen/LYYJyyz">
+  HTML and CSS Fundamentals</a> by Mahendra Choudhary (<a href="https://codepen.io/iampika">@iampika</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <p>A quiz in which you determine what the specific style rule is for the specified selector.</p>
             </section>
             <hr/>
             <footer>
@@ -252,5 +384,6 @@
         </article>
     </main>
 </div>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 </body>
 </html>

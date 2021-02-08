@@ -140,6 +140,10 @@ nav li:nth-child(2) a::before {
     content: 'code';
 }
 
+nav li:nth-child(3) a::before {
+    content: 'accessibility';
+}
+
 nav a:hover {
     text-shadow: 2px 2px rgba(0,0,0,0.45);
 }
@@ -156,6 +160,38 @@ nav a:focus {
             0 0 0 14px white
     ;
 
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        top: calc(100% - 75px);
+        left: 0;
+
+        height: 75px;
+        width: 100%;
+    }
+
+    nav:hover {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        visibility: hidden;
+        display: inline-block;
+        width: 75px;
+        overflow: hidden;
+        padding: 10px 15px;
+    }
+
+    nav a::before {
+        visibility: visible;
+        padding: 10px 16px;
+    }
 }
 
 /* ARTICLE */
