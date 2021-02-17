@@ -27,7 +27,7 @@ body {
     user-select: none;
 }
 
-h1, h2, h3, h4, p, a, figcaption, ol li::marker, li {
+h1, h2, h3, h4, p, a, figcaption, ol li::marker, li, label, input, textarea, td, th, caption {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -277,9 +277,43 @@ section::after {
     text-align: center;
 }
 
+article footer {
+    display: flex;
+    justify-content: center;
+}
+
+caption {
+    text-decoration: underline;
+}
+
+th {
+    padding: 0 8px;
+}
+
+td {
+    text-align: center;
+    margin: 0 4px;
+}
+
 section:last-of-type::after {
     content: '' !important;
     display: none;
+}
+
+section:last-of-type p {
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+
+    display: flex;
+    align-items: center;
+}
+
+section:last-of-type p::before {
+    content: 'account_circle';
+    font-family: 'Material Icons', sans-serif;
+    font-size: 28px;
+    padding-right: 5px;
 }
 
 .list_item_image {
@@ -292,4 +326,75 @@ section:last-of-type::after {
     margin-left: -5px;
     border-left: 2px solid black;
     border-radius: 6px;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form div:focus {
+    background-color: red;
+}
+
+label {
+    position: absolute;
+    left: 16px;
+    top: 25px;
+    transform: translateY(-50%);
+    transition: transform .3s ease;
+}
+
+input, textarea {
+    padding: 20px 16px 6px 16px;
+    border-color: transparent;
+    border-bottom: 2px solid var(--primay-clr);
+    background-color: var(--primary-bg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+
+    transition: border-bottom-color .3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-radius: 15px 15px 0 0;
+}
+
+input:focus + label, input:valid + label, input:invalid:focus + label,
+textarea:focus + label, textarea:valid + label, textarea:invalid:focus + label {
+    transform:
+        translateY(-106%)
+        translateX(-10%)
+        scale(0.75);
+}
+
+input:invalid:focus, textarea:invalid:focus {
+    border: 2px solid transparent;
+    border-bottom: 2px solid red !important;
+}
+
+input[type="submit"] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    background-color: limegreen;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type="submit"] + label {
+    transform: translateY(0);
 }

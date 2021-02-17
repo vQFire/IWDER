@@ -376,15 +376,53 @@
             </p>
             <p>A quiz in which you determine what the specific style rule is for the specified selector.</p>
         </section>
-        <hr/>
         <footer>
-            <p>
-                Written by: Mahendra Choudhary | 08-11-2019<br/>
-                <a href="https://medium.com/@iampika/html-and-css-fundamentals-6b8f7d90911b"
-                   target="_blank"
-                   rel="noopener noreferrer">Medium</a>
-            </p>
+            <table>
+                <caption>Article info</caption>
+                <thead>
+                <tr>
+                    <th>Written by</th>
+                    <th>Published on (date)</th>
+                    <th>Published on (blog)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mahendra Choudhary</td>
+                    <td>08-11-2020</td>
+                    <td><a href="https://medium.com/@iampika/html-and-css-fundamentals-6b8f7d90911b"
+                           target="_blank"
+                           rel="noopener noreferrer">Medium</a></td>
+                </tr>
+                </tbody>
+            </table>
         </footer>
+        <hr>
+        <section>
+            <h2>Comments</h2>
+            <form action="jesjesjes.php" method="post">
+                <div>
+                    <input id="input_email" type="email" name="email" required />
+                    <label for="input_email">Email</label>
+                </div>
+
+                <div>
+                    <textarea id="input_comment" rows="3" spellcheck="false" maxlength="300" required></textarea>
+                    <label for="input_comment">Comment</label>
+                </div>
+
+                <input type="submit" value="Plaats comment">
+            </form>
+            <p>
+                Thanks, this really helped me getting started with web development!
+            </p>
+            <p>
+                Will there be an article about <code>flex</code> and <code>grid</code>?
+            </p>
+            <p>
+                I don't know why I read this... I don't even want to program
+            </p>
+        </section>
     </article>
 </main>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
