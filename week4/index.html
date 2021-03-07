@@ -5,159 +5,409 @@
     <title> Menu </title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Material+Icons&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Material+Icons&display=swap"
+          rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="title">Menu</h1>
-    <ul class="filter__list">
-        <li class="filter" data-category="pizza">
-            <button class="filter__button">Pizza</button>
-        </li>
-        <li class="filter" data-category="hamburger">
-            <button class="filter__button">Hamburger</button>
-        </li>
-        <li class="filter" data-category="snacks">
-            <button class="filter__button">Snacks</button>
-        </li>
-        <li class="filter" data-category="favorite">
-            <button class="filter__button">Favorites</button>
-        </li>
-    </ul>
-    <main>
-        <article class="article">
-            <h2>Pizza's</h2>
-            <ul class="product__list">
-                <li class="product"
-                    data-category="pizza"
-                >
-                    <figure class="product__image">
-                        <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
-                    </figure>
-                    <section class="product__content">
-                        <h4 class="product__title">Pizza Salami</h4>
-                        <p class="product__description">Tomato, Cheese, Salami</p>
-
-                    </section>
-                    <!-- Icon is added with css -->
-                    <button class="product__button product__button--favorite_icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                        </svg>
-                        <i class="product__button--favorite_icon__clip"></i>
-                    </button>
-                    <button class="product__button product__button--add material-icons">add_shopping_cart</button>
-                </li>
-                <li class="product"
-                    data-category="pizza"
-                >
-                    <figure class="product__image">
-                        <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
-                    </figure>
-                    <section class="product__content">
-                        <h4 class="product__title">Pizza Salami</h4>
-                        <p class="product__description">Tomato, Cheese, Salami</p>
-
-                    </section>
-                    <!-- Icon is added with css -->
-                    <button class="product__button product__button--favorite_icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                        </svg>
-                        <i class="product__button--favorite_icon__clip"></i>
-                    </button>
-                    <button class="product__button product__button--add material-icons">add_shopping_cart</button>
-                </li>
-                <li class="product"
-                    data-category="pizza"
-                >
-                    <figure class="product__image">
-                        <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
-                    </figure>
-                    <section class="product__content">
-                        <h4 class="product__title">Pizza Salami</h4>
-                        <p class="product__description">Tomato, Cheese, Salami</p>
-
-                    </section>
-                    <!-- Icon is added with css -->
-                    <button class="product__button product__button--favorite_icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                        </svg>
-                        <i class="product__button--favorite_icon__clip"></i>
-                    </button>
-                    <button class="product__button product__button--add material-icons">add_shopping_cart</button>
-                </li>
-                <li class="product"
-                    data-category="pizza"
-                >
-                    <figure class="product__image">
-                        <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
-                    </figure>
-                    <section class="product__content">
-                        <h4 class="product__title">Pizza Salami</h4>
-                        <p class="product__description">Tomato, Cheese, Salami</p>
-
-                    </section>
-                    <!-- Icon is added with css -->
-                    <button class="product__button product__button--favorite_icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                        </svg>
-                        <i class="product__button--favorite_icon__clip"></i>
-                    </button>
-                    <button class="product__button product__button--add material-icons">add_shopping_cart</button>
-                </li>
-                <li class="product"
-                    data-category="pizza"
-                >
-                    <figure class="product__image">
-                        <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
-                    </figure>
-                    <section class="product__content">
-                        <h4 class="product__title">Pizza Salami</h4>
-                        <p class="product__description">Tomato, Cheese, Salami</p>
-
-                    </section>
-                    <!-- Icon is added with css -->
-                    <button class="product__button product__button--favorite_icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                        </svg>
-                        <i class="product__button--favorite_icon__clip"></i>
-                    </button>
-                    <button class="product__button product__button--add material-icons">add_shopping_cart</button>
-                </li>
-                <li class="product"
-                    data-category="pizza"
-                >
-                    <figure class="product__image">
-                        <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
-                    </figure>
-                    <section class="product__content">
-                        <h4 class="product__title">Pizza Salami</h4>
-                        <p class="product__description">Tomato, Cheese, Salami</p>
-
-                    </section>
-                    <!-- Icon is added with css -->
-                    <button class="product__button product__button--favorite_icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
-                            <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
-                        </svg>
-                        <i class="product__button--favorite_icon__clip"></i>
-                    </button>
-                    <button class="product__button product__button--add material-icons">add_shopping_cart</button>
-                </li>
-            </ul>
-        </article>
-    </main>
-    <svg id='heart__clip' height="0" width="0">
-        <defs>
-            <clipPath id="heart__clip--path">
-                <path d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z"/>
-            </clipPath>
-        </defs>
-    </svg>
-    <script src="assets/js/main.js"></script>
+<h1 class="page__title">Menu</h1>
+<ul class="filter__list">
+    <li class="filter" data-category="pizza">
+        <button class="filter__button">Pizza</button>
+    </li>
+    <li class="filter" data-category="hamburger">
+        <button class="filter__button">Hamburger</button>
+    </li>
+    <li class="filter" data-category="snack">
+        <button class="filter__button">Snacks</button>
+    </li>
+    <li class="filter" data-category="favorite">
+        <button class="filter__button">Favorites</button>
+    </li>
+</ul>
+<main>
+    <article>
+        <h2 class="product__list__title" data-category="pizza">Pizza's</h2>
+        <ul class="product__list">
+            <li class="product"
+                data-category="pizza"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Pizza Borromea">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Pizza Borromea</h4>
+                    <p class="product__text product__description">Cheese, Tomato and Ham (Turkey)</p>
+                    <p class="product__text product__price">8,00</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="pizza"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Pizza Hawaii</h4>
+                    <p class="product__text product__description">Tomato, Cheese, Ham and Pineapple</p>
+                    <p class="product__text product__price">8,00</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="pizza"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Pizza Salami</h4>
+                    <p class="product__text product__description">Tomato, Cheese and Salami</p>
+                    <p class="product__text product__price">8,00</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="pizza"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Pizza Pepperoni</h4>
+                    <p class="product__text product__description">Tomato, Cheese and Pepperoni</p>
+                    <p class="product__text product__price">8,00</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="pizza"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Pizza Quatori Stagioni</h4>
+                    <p class="product__text product__description">Tomato, 4 Season cheese, Salami, Ham, Champion and
+                        Bell Pepper</p>
+                    <p class="product__text product__price">8,50</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="pizza"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Pizza Shawarma</h4>
+                    <p class="product__text product__description">Tomato, Cheese and Shawarma</p>
+                    <p class="product__text product__price">8,50</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="pizza"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Pizza Tuna</h4>
+                    <p class="product__text product__description">Tomato, Cheese, Red Union, Olives and Tuna</p>
+                    <p class="product__text product__price">8,50</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+        </ul>
+    </article>
+    <article>
+        <h2 class="product__list__title" data-category="hamburger">Hamburgers</h2>
+        <ul class="product__list">
+            <li class="product"
+                data-category="hamburger"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Cheeseburger</h4>
+                    <p class="product__text product__description">Grilled beef burger, Homemade special sauce,
+                        Caramelized unions, Pickle, Iceberg lettuce and Cheese</p>
+                    <p class="product__text product__price">5,15</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="hamburger"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Double Cheeseburger</h4>
+                    <p class="product__text product__description">Double grilled beef burger, Homemade special sauce,
+                        Caramelized unions, Pickle, Iceberg lettuce and Cheese</p>
+                    <p class="product__text product__price">7,20</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="hamburger"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Triple Cheeseburger</h4>
+                    <p class="product__text product__description">Triple grilled beef burger, Homemade special sauce,
+                        Caramelized unions, Pickle, Iceberg lettuce and Cheese</p>
+                    <p class="product__text product__price">9,00</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="hamburger"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Cheese Onion Burger</h4>
+                    <p class="product__text product__description">4 Types of onion, pickles, cheese, homemade special
+                        sauce</p>
+                    <p class="product__text product__price">6,70</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="hamburger"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Jalapeño president burger</h4>
+                    <p class="product__text product__description">Jalapeño, Onions and Pickles</p>
+                    <p class="product__text product__price">6,70</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+        </ul>
+    </article>
+    <article>
+        <h2 class="product__list__title" data-category="snack">Snacks</h2>
+        <ul class="product__list">
+            <li class="product"
+                data-category="snack"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Chicken nuggets (6 pieces)</h4>
+                    <p class="product__text product__price">3,50</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="snack"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Chicken nuggets (9 pieces)</h4>
+                    <p class="product__text product__price">4,75</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="snack"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Chicken nuggets (12 pieces)</h4>
+                    <p class="product__text product__price">6,25</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="snack"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Chicken strips (4 pieces)</h4>
+                    <p class="product__text product__price">4,20</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="snack"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Chicken strips (8 pieces)</h4>
+                    <p class="product__text product__price">7,70</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+            <li class="product"
+                data-category="snack"
+            >
+                <figure class="product__image">
+                    <img src="https://via.placeholder.com/267x150" alt="Product (16:9)">
+                </figure>
+                <section class="product__content">
+                    <h4 class="product__text product__title">Chicken strips (12 pieces)</h4>
+                    <p class="product__text product__price">11,00</p>
+                </section>
+                <!-- Icon is added with css -->
+                <button class="product__button product__button--favorite_icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" class='heart-stroke'>
+                        <path d="M20,35.07,4.55,19.62a8.5,8.5,0,0,1-.12-12l.12-.12a8.72,8.72,0,0,1,12.14,0L20,10.77l3.3-3.3A8.09,8.09,0,0,1,29.13,4.9a8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.12,12l-.12.12ZM10.64,7.13A6.44,6.44,0,0,0,6.07,18.19L20,32.06,33.94,18.12A6.44,6.44,0,0,0,34,9l0,0a6.44,6.44,0,0,0-4.77-1.85A6,6,0,0,0,24.83,9L20,13.78,15.21,9A6.44,6.44,0,0,0,10.64,7.13Z"/>
+                    </svg>
+                    <i class="product__button--favorite_icon__clip"></i>
+                </button>
+                <button class="product__button product__button--add material-icons">add_shopping_cart</button>
+            </li>
+        </ul>
+    </article>
+</main>
+<svg id='heart__clip' height="0" width="0">
+    <defs>
+        <clipPath id="heart__clip--path">
+            <path d="M20,35.09,4.55,19.64a8.5,8.5,0,0,1-.13-12l.13-.13a8.72,8.72,0,0,1,12.14,0L20,10.79l3.3-3.3a8.09,8.09,0,0,1,5.83-2.58,8.89,8.89,0,0,1,6.31,2.58,8.5,8.5,0,0,1,.13,12l-.13.13Z"/>
+        </clipPath>
+    </defs>
+</svg>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
