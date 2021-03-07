@@ -15,242 +15,417 @@
           rel="stylesheet">
 </head>
 <body>
-<div class="page-wrapper">
-    <nav>
-        <ul>
-            <li><a href="indexV3.html">Written by AI</a></li>
-            <li><a href="html_css_fundamentals.html"><abbr>HTML</abbr> & CSS fundamentals</a></li>
-            <li><a href=".">Written by AI</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Youp's mooie artikelen</h1>
-        <article>
-            <h2><abbr>HTML</abbr> and CSS Fundamentals</h2>
-            <section>
-                <h4>At the end of this article, you should be able to:</h4>
-                <ul>
-                    <li><p>Understand the concepts of <abbr>HTML</abbr> and be able to build a small <abbr>HTML</abbr>
-                        page.</p></li>
-                    <li><p>Understand the main concepts of CSS (selectors and style rules), and be able to apply them to
-                        an <abbr>HTML</abbr> page.</p></li>
-                </ul>
-                <h3>Requirements</h3>
-                <ul>
-                    <li><a href="#">Introduction to Web Development Fundamentals</a></li>
-                </ul>
-                <h3>Learn</h3>
-                <blockquote>
-                    Learn to understand the concepts of <abbr>HTML</abbr> and be able to build a small <abbr>HTML</abbr>
-                    page.
-                </blockquote>
-                <h3>Overview</h3>
-                <p><abbr>HTML</abbr> is one of the core building blocks of the Internet. You should learn what it is and
-                    how to use
-                    the basic tags to get content to appear on a screen.</p>
-            </section>
-            <section>
-                <h3>Review</h3>
-                <code>What is <abbr>HTML</abbr>?</code>
-                <p>
-                    Hypertext markup language. It is the language that web browsers read to build a web page. It acts as
-                    a ‘blueprint’ to display data on a user’s screen. This is the basic building block of the web. Every
-                    page on the Internet is just <abbr>HTML</abbr> at its core.
-                </p>
-                <code>What are <abbr>HTML</abbr> elements?</code>
-                <p>
-                    Elements are what we use to tell the browser how we want the data supplied to be displayed.
-                </p>
-                <code>What is a ‘tag’?</code>
-                <p>
-                    An element consists of an opening and closing tag. The data supplied between the tags will be
-                    displayed per the instructions of the element.
-                </p>
-                <code>How does the browser use <abbr>HTML</abbr> to create what I see?</code>
-                <p>
-                    The browser reads and interprets the <abbr>HTML</abbr> file to understand how the developer intended
-                    the data to
-                    appear on the screen.
-                </p>
-                <code>What are the basic <abbr>HTML</abbr> elements?</code>
-                <p>
-                    The elements we learned about were <code>html</code>, <code>head</code>, <code>body</code>, <code>‘p’</code>,
-                    <code>span</code>, <code>div</code>, and <code>h1-h6</code>
-                </p>
-            </section>
-            <section>
-                <h2>Learn</h2>
-                <blockquote>Expanded ‘Basic’ elements.</blockquote>
-                <h3>Overview</h3>
-                <p>
-                    There are dozens of elements available in <abbr>HTML</abbr>. However, just a handful are used 90% of
-                    the time. I
-                    will only cover the most commonly used in this lesson. You can achieve virtually anything you want
-                    with the most basic <abbr>HTML</abbr> elements and some CSS (which we will talk about later). It is
-                    important to
-                    note though that there is an idea in web development that your <abbr>HTML</abbr> elements should
-                    match the exact
-                    information you are attempting to display. This is known as being ‘semantically correct’, and this
-                    method uses all of the available <abbr>HTML</abbr> elements. This is done for a number of reasons
-                    including
-                    accessibility and SEO. We will not learn about this method in the lesson, but you should know that
-                    it exists.
-                </p>
-                <h3>Attributes</h3>
-                <p>
-                    Before we jump into learning about a couple more <abbr>HTML</abbr> elements, let’s learn about
-                    another way to
-                    supply data to an element. We know that we can supply text between two tags, but what if what we are
-                    trying to display cannot be textually based? We can include this data with special flags right
-                    inside of our tags. This is known as an attribute. We will see attributes in action in the next
-                    section.
-                </p>
-                <h3>More Elements</h3>
-                <blockquote>
-                    <code>&#60;a&#62;</code>
-                </blockquote>
-                <p>
-                    The ‘a’ (“anchor”) element, allows us to create links to other web pages (or even to other areas
-                    within our own web page). You will always see the ‘a’ element used with the href attribute to tell
-                    the browser what address you want the link to point to.
-                </p>
+<nav>
+    <ul>
+        <li><a href="index.html">Written by AI</a></li>
+        <li><a href="html_css_fundamentals.html"><abbr>HTML</abbr> & CSS fundamentals</a></li>
+        <li><a href="introduction_to_web_development_fundamentals.html">Intro to Web Development</a></li>
+        <li><p id="swipe_message">Swipe up to close the navigation</p></li>
+    </ul>
+</nav>
+<main>
+    <h1>Youp's mooie artikelen</h1>
+    <article>
+        <h2><abbr>HTML</abbr> and CSS Fundamentals</h2>
+        <section>
+            <h4>At the end of this article, you should be able to:</h4>
+            <ul>
+                <li><p>Understand the concepts of <abbr>HTML</abbr> and be able to build a small <abbr>HTML</abbr>
+                    page.</p></li>
+                <li><p>Understand the main concepts of CSS (selectors and style rules), and be able to apply them to
+                    an <abbr>HTML</abbr> page.</p></li>
+            </ul>
+            <h3>Requirements</h3>
+            <ul>
+                <li><a href="#">Introduction to Web Development Fundamentals</a></li>
+            </ul>
+            <h3>Learn</h3>
+            <blockquote>
+                Learn to understand the concepts of <abbr>HTML</abbr> and be able to build a small <abbr>HTML</abbr>
+                page.
+            </blockquote>
+            <h3>Overview</h3>
+            <p><abbr>HTML</abbr> is one of the core building blocks of the Internet. You should learn what it is and
+                how to use
+                the basic tags to get content to appear on a screen.</p>
+        </section>
+        <section>
+            <h3>Review</h3>
+            <code>What is <abbr>HTML</abbr>?</code>
+            <p>
+                Hypertext markup language. It is the language that web browsers read to build a web page. It acts as
+                a ‘blueprint’ to display data on a user’s screen. This is the basic building block of the web. Every
+                page on the Internet is just <abbr>HTML</abbr> at its core.
+            </p>
+            <code>What are <abbr>HTML</abbr> elements?</code>
+            <p>
+                Elements are what we use to tell the browser how we want the data supplied to be displayed.
+            </p>
+            <code>What is a ‘tag’?</code>
+            <p>
+                An element consists of an opening and closing tag. The data supplied between the tags will be
+                displayed per the instructions of the element.
+            </p>
+            <code>How does the browser use <abbr>HTML</abbr> to create what I see?</code>
+            <p>
+                The browser reads and interprets the <abbr>HTML</abbr> file to understand how the developer intended
+                the data to
+                appear on the screen.
+            </p>
+            <code>What are the basic <abbr>HTML</abbr> elements?</code>
+            <p>
+                The elements we learned about were <code>html</code>, <code>head</code>, <code>body</code>,
+                <code>‘p’</code>,
+                <code>span</code>, <code>div</code>, and <code>h1-h6</code>
+            </p>
+        </section>
+        <section>
+            <h2>Learn</h2>
+            <blockquote>Expanded ‘Basic’ elements.</blockquote>
+            <h3>Overview</h3>
+            <p>
+                There are dozens of elements available in <abbr>HTML</abbr>. However, just a handful are used 90% of
+                the time. I
+                will only cover the most commonly used in this lesson. You can achieve virtually anything you want
+                with the most basic <abbr>HTML</abbr> elements and some CSS (which we will talk about later). It is
+                important to
+                note though that there is an idea in web development that your <abbr>HTML</abbr> elements should
+                match the exact
+                information you are attempting to display. This is known as being ‘semantically correct’, and this
+                method uses all of the available <abbr>HTML</abbr> elements. This is done for a number of reasons
+                including
+                accessibility and SEO. We will not learn about this method in the lesson, but you should know that
+                it exists.
+            </p>
+            <h3>Attributes</h3>
+            <p>
+                Before we jump into learning about a couple more <abbr>HTML</abbr> elements, let’s learn about
+                another way to
+                supply data to an element. We know that we can supply text between two tags, but what if what we are
+                trying to display cannot be textually based? We can include this data with special flags right
+                inside of our tags. This is known as an attribute. We will see attributes in action in the next
+                section.
+            </p>
+            <h3>More Elements</h3>
+            <blockquote>
+                <code>&#60;a&#62;</code>
+            </blockquote>
+            <p>
+                The ‘a’ (“anchor”) element, allows us to create links to other web pages (or even to other areas
+                within our own web page). You will always see the ‘a’ element used with the href attribute to tell
+                the browser what address you want the link to point to.
+            </p>
+            <figure>
                 <img src="images/html_css_fundamentals/anchor_example.png" alt="Anchor code example">
-                <blockquote>
-                    <code>&#60;img&#62;</code>
-                </blockquote>
+            </figure>
+            <blockquote>
+                <code>&#60;img&#62;</code>
+            </blockquote>
+            <figure>
                 <img src="images/html_css_fundamentals/img_example.png" alt="Image code example">
-                <p>
-                    This element will display an image on the screen. It will always have an ‘src’ attribute which
-                    points to the address of the image to be displayed. NOTE: img tags can be self-closing, as in they
-                    do not need two tags. Simply put the / before the closing bracket in the first tag:
-                </p>
-                <blockquote>
-                    <code>&#60;ul&#62;</code> and <code>&#60;ol&#62;</code>
-                </blockquote>
-                <p>
-                    This element represents an “unordered list”. This is the parent element and will contain list items.
-                    There is also an ordered list &#60;ol&#62;, but is rarely used in modern web development, as most
-                    developers like to style their lists themselves.
-                </p>
-                <blockquote>
-                    <code>&#60;li&#62;</code>
-                </blockquote>
-                <p>
-                    The companion to the <code>&#60;ul&#62;</code> and <code>&#60;ol&#62;</code>. These elements
-                    represent the items to appear in the list. Any other elements can appear in an
-                    <code>&#60;li&#62;</code>.
-                </p>
+            </figure>
+            <p>
+                This element will display an image on the screen. It will always have an ‘src’ attribute which
+                points to the address of the image to be displayed. NOTE: img tags can be self-closing, as in they
+                do not need two tags. Simply put the / before the closing bracket in the first tag:
+            </p>
+            <blockquote>
+                <code>&#60;ul&#62;</code> and <code>&#60;ol&#62;</code>
+            </blockquote>
+            <p>
+                This element represents an “unordered list”. This is the parent element and will contain list items.
+                There is also an ordered list &#60;ol&#62;, but is rarely used in modern web development, as most
+                developers like to style their lists themselves.
+            </p>
+            <blockquote>
+                <code>&#60;li&#62;</code>
+            </blockquote>
+            <p>
+                The companion to the <code>&#60;ul&#62;</code> and <code>&#60;ol&#62;</code>. These elements
+                represent the items to appear in the list. Any other elements can appear in an
+                <code>&#60;li&#62;</code>.
+            </p>
+            <figure>
                 <img src="images/html_css_fundamentals/list_example.png" alt="List code example">
-                <h3>Nesting Elements and Indentation</h3>
-                <p>
-                    We’ve seen in previous examples that we can nest elements inside of tags. In fact, this is a major
-                    part of writing <abbr>HTML</abbr>. Nested elements are referred to as <code>children</code> and the
-                    top level elements as
-                    <code>parents</code>. You will see this type of structure throughout your time writing
-                    <abbr>HTML</abbr> (and all
-                    code for
-                    that matter). One thing to note is that while indentation is not a requirement of <abbr>HTML</abbr>
-                    (nor of <abbr>CSS</abbr>
-                    and JavaScript), it is still often practiced as a readability issue. We not only write code for
-                    ourselves, but also for our teammates and those that come after us. Indentation lets your code be
-                    much more easily read and understood.
-                </p>
-            </section>
-            <section>
-                <h2>Learn</h2>
-                <blockquote>
-                    Learn to understand the main concepts of <abbr>CSS</abbr> (selectors and style rules), and be able
-                    to apply them
-                    to an <abbr>HTML</abbr> page.
-                </blockquote>
-                <h3>Overview</h3>
-                <p>
-                    <abbr>HTML</abbr> is great, but <abbr>HTML</abbr> alone is plain and boring. This was the case
-                    during early days of the
-                    Internet: web pages were very basic, text-only sites. Then came along <abbr>CSS</abbr> (Cascading
-                    Style Sheets),
-                    which allowed us to put some color and style into our web pages! It’s like the difference between
-                    black & white and color <abbr>TV</abbr>.
-                </p>
-                <h3>Introduction to Cascading Stylesheets.</h3>
-                <p>
-                    Before we begin, let’s think about the analogy of a web page as a house. In order to build a house,
-                    we need a few things. First, we need raw materials. Then, we need a plan. Then, we need paint and
-                    decorations. Finally, we need electricity and plumbing to make everything work*. In this analogy,
-                    our <abbr>HTML</abbr> is our raw materials. It has so much potential, but it’s just laying in a pile
-                    on the
-                    ground. We need a plan and a way to spruce it up and decorate it. That is where <abbr>CSS</abbr>
-                    comes in.
-                </p>
-                <blockquote>
-                    *the electricity and plumbing represents JavaScript which we will learn about later.
-                </blockquote>
-                <h3>What is <abbr>CSS</abbr>?</h3>
-                <p>
-                    As already mentioned, <abbr>CSS</abbr> stands for Cascading Style Sheets. It is a different language
-                    than <abbr>HTML</abbr>.
-                    It allows us to add color and style to our web pages. Usually, when we think about web pages, we
-                    think about nicely put-together, pretty-looking sites, and so far what we have built has been pretty
-                    bland, if not ugly. Once the browser reads the <abbr>HTML</abbr>, it will then read the
-                    <abbr>CSS</abbr> and give different
-                    styling rules to different elements in our <abbr>HTML</abbr> based on how we select them.
-                </p>
-                <h3>The <code>style</code> and <code>link</code> Elements</h3>
-                <p>
-                    Before we can add <abbr>CSS</abbr> to our web page, we need to inform the browser that what it is
-                    reading is in
-                    fact <abbr>CSS</abbr>. We can tell the browser that through <abbr>HTML</abbr> elements known as the
-                    <code>style</code> and <code>link</code> elements.
-                    These elements will go in between the head tags, as it is not necessarily data we need to appear on
-                    the screen.
-                </p>
-                <blockquote>
-                    There are two ways of including <abbr>CSS</abbr> in our <abbr>HTML</abbr>.
-                </blockquote>
-                <ol>
-                    <li><p>We can write our <abbr>CSS</abbr> directly between two style tags:</p></li>
-                    <li class="list_item_image"><img src="images/html_css_fundamentals/inline_style_example.png"
-                                                     alt="Inline style example"></li>
-                    <li value="2"><p>We can link to an external <abbr>CSS</abbr> file using the link element. This
-                        element will
-                        include two attributes: <abbr>rel</abbr> and <abbr>href</abbr>. <abbr>rel</abbr> will refer to
-                        the type of file we are linking: in this
-                        case, “stylesheet”, and the <abbr>href</abbr> will point to the location of the file.</p></li>
-                    <li class="list_item_image"><img src="images/html_css_fundamentals/head_styles_example.png"
-                                                     alt="Head style example"></li>
-                </ol>
-                <h3>Introduction to <abbr>CSS</abbr> Selectors</h3>
-                <p>
-                    In order for us to apply styling rules to <abbr>HTML</abbr> elements, we have to know which elements
-                    to apply the
-                    rules to. This is where selectors come in. You can select all elements of a certain type:
-                    <code>p</code>, <code>div</code>,
-                    <code>body</code>, and <abbr>etc</abbr>. Or you can apply a class or id to each individual element.
-                    We apply these selectors
-                    to the <abbr>HTML</abbr> tags themselves in the form of an attribute:
-                </p>
-                <img src="images/html_css_fundamentals/id_example.png" alt="Id or class code example">
-                <blockquote class="large_quote">
-                    <p><strong><code>Id</code>s:</strong> are titles that can only appear on a single element. Think of
-                        it as you would your driver’s license number. ONLY you have that one number.</p>
-                    <p><strong><code>Class</code>es:</strong>on the other hand can apply to multiple elements. Think of
-                        it like a classroom. Usually, you aren’t the only person in a class, although you might be. The
-                        class is big enough for lots of people</p>
-                    <p><strong>Individual elements:</strong> We do not need to add anything to use every element of a
-                        certain type as a selector. <abbr>CSS</abbr> does that for us already.</p>
-                </blockquote>
-            </section>
-            <hr/>
-            <footer>
-                <p>
-                    Written by: Mahendra Choudhary | 08-11-2019<br/>
-                    <a href="https://medium.com/@iampika/html-and-css-fundamentals-6b8f7d90911b"
-                       target="_blank"
-                       rel="noopener noreferrer">Medium</a>
-                </p>
-            </footer>
-        </article>
-    </main>
-</div>
+            </figure>
+            <h3>Nesting Elements and Indentation</h3>
+            <p>
+                We’ve seen in previous examples that we can nest elements inside of tags. In fact, this is a major
+                part of writing <abbr>HTML</abbr>. Nested elements are referred to as <code>children</code> and the
+                top level elements as
+                <code>parents</code>. You will see this type of structure throughout your time writing
+                <abbr>HTML</abbr> (and all
+                code for
+                that matter). One thing to note is that while indentation is not a requirement of <abbr>HTML</abbr>
+                (nor of <abbr>CSS</abbr>
+                and JavaScript), it is still often practiced as a readability issue. We not only write code for
+                ourselves, but also for our teammates and those that come after us. Indentation lets your code be
+                much more easily read and understood.
+            </p>
+        </section>
+        <section>
+            <h2>Learn</h2>
+            <blockquote>
+                Learn to understand the main concepts of <abbr>CSS</abbr> (selectors and style rules), and be able
+                to apply them
+                to an <abbr>HTML</abbr> page.
+            </blockquote>
+            <h3>Overview</h3>
+            <p>
+                <abbr>HTML</abbr> is great, but <abbr>HTML</abbr> alone is plain and boring. This was the case
+                during early days of the
+                Internet: web pages were very basic, text-only sites. Then came along <abbr>CSS</abbr> (Cascading
+                Style Sheets),
+                which allowed us to put some color and style into our web pages! It’s like the difference between
+                black & white and color <abbr>TV</abbr>.
+            </p>
+            <h3>Introduction to Cascading Stylesheets.</h3>
+            <p>
+                Before we begin, let’s think about the analogy of a web page as a house. In order to build a house,
+                we need a few things. First, we need raw materials. Then, we need a plan. Then, we need paint and
+                decorations. Finally, we need electricity and plumbing to make everything work*. In this analogy,
+                our <abbr>HTML</abbr> is our raw materials. It has so much potential, but it’s just laying in a pile
+                on the
+                ground. We need a plan and a way to spruce it up and decorate it. That is where <abbr>CSS</abbr>
+                comes in.
+            </p>
+            <blockquote>
+                *the electricity and plumbing represents JavaScript which we will learn about later.
+            </blockquote>
+            <h3>What is <abbr>CSS</abbr>?</h3>
+            <p>
+                As already mentioned, <abbr>CSS</abbr> stands for Cascading Style Sheets. It is a different language
+                than <abbr>HTML</abbr>.
+                It allows us to add color and style to our web pages. Usually, when we think about web pages, we
+                think about nicely put-together, pretty-looking sites, and so far what we have built has been pretty
+                bland, if not ugly. Once the browser reads the <abbr>HTML</abbr>, it will then read the
+                <abbr>CSS</abbr> and give different
+                styling rules to different elements in our <abbr>HTML</abbr> based on how we select them.
+            </p>
+            <h3>The <code>style</code> and <code>link</code> Elements</h3>
+            <p>
+                Before we can add <abbr>CSS</abbr> to our web page, we need to inform the browser that what it is
+                reading is in
+                fact <abbr>CSS</abbr>. We can tell the browser that through <abbr>HTML</abbr> elements known as the
+                <code>style</code> and <code>link</code> elements.
+                These elements will go in between the head tags, as it is not necessarily data we need to appear on
+                the screen.
+            </p>
+            <blockquote>
+                There are two ways of including <abbr>CSS</abbr> in our <abbr>HTML</abbr>.
+            </blockquote>
+            <ol>
+                <li><p>We can write our <abbr>CSS</abbr> directly between two style tags:</p></li>
+                <li class="list_item_image"><img src="images/html_css_fundamentals/inline_style_example.png"
+                                                 alt="Inline style example"></li>
+                <li value="2"><p>We can link to an external <abbr>CSS</abbr> file using the link element. This
+                    element will
+                    include two attributes: <abbr>rel</abbr> and <abbr>href</abbr>. <abbr>rel</abbr> will refer to
+                    the type of file we are linking: in this
+                    case, “stylesheet”, and the <abbr>href</abbr> will point to the location of the file.</p></li>
+                <li class="list_item_image"><img src="images/html_css_fundamentals/head_styles_example.png"
+                                                 alt="Head style example"></li>
+            </ol>
+            <h3>Introduction to <abbr>CSS</abbr> Selectors</h3>
+            <p>
+                In order for us to apply styling rules to <abbr>HTML</abbr> elements, we have to know which elements
+                to apply the
+                rules to. This is where selectors come in. You can select all elements of a certain type:
+                <code>p</code>, <code>div</code>,
+                <code>body</code>, and <abbr>etc</abbr>. Or you can apply a class or id to each individual element.
+                We apply these selectors
+                to the <abbr>HTML</abbr> tags themselves in the form of an attribute:
+            </p>
+            <figure>
+                <img src="images/html_css_fundamentals/id_example.png" alt="Id or class html code example">
+            </figure>
+            <blockquote class="large_quote">
+                <p><strong><code>Id</code>s:</strong> are titles that can only appear on a single element. Think of
+                    it as you would your driver’s license number. ONLY you have that one number.</p>
+                <p><strong><code>Class</code>es:</strong>on the other hand can apply to multiple elements. Think of
+                    it like a classroom. Usually, you aren’t the only person in a class, although you might be. The
+                    class is big enough for lots of people</p>
+                <p><strong>Individual elements:</strong> We do not need to add anything to use every element of a
+                    certain type as a selector. <abbr>CSS</abbr> does that for us already.</p>
+            </blockquote>
+            <h3>Anatomy of Styling Rules (Syntax)</h3>
+            <p>
+                Now that we have our selectors in place we need to tell the browser what to do with those selectors.
+                Inside of our style tags, we will insert the rules. Classes will always begin with <code>.</code>,
+                and <abbr>Ids</abbr> will
+                always begin with #. Elements will begin with neither and just have the element name. After the name
+                of the selector, we will use braces <code>(“{}”)</code> to hold our rules to that one selector.
+            </p>
+            <figure>
+                <img src="images/html_css_fundamentals/class_id_example.png" alt="Id or class style code example">
+            </figure>
+            <p>
+                Styling rules will need to adhere to a certain syntax in our <abbr>CSS</abbr> so that the browser
+                knows how to
+                read them properly. Within the braces, we will then have the name of the property, a colon(“:”), and
+                the value of the rule. This will be followed by a semicolon(“;”).
+            </p>
+            <figure>
+                <img src="images/html_css_fundamentals/css_example.png" alt="CSS code example">
+            </figure>
+            <h3>Styling Rules</h3>
+            <p>
+                Now that we have some <abbr>HTML</abbr> elements selected, we can begin to add styling. There are a
+                LOT of
+                different ways you can style an object. You can control how big or small it is, what color it is,
+                where it is placed on the screen, or even if it is visible or not. We will go over some of the most
+                common styling properties and how to use them.
+            </p>
+            <blockquote>
+                <code>background</code> or <code>background-color</code>
+            </blockquote>
+            <p>
+                Background can be set to a variety of rules. Most common would be setting the background to a color
+                or an image. Both are displayed below. If you want to be more explicit, you can use the property
+                background-color to only set the color of the background.
+            </p>
+            <figure>
+                <img src="images/html_css_fundamentals/css_background_example.png"
+                     alt="CSS background code example">
+            </figure>
+            <p>
+                Color is used for text only. It will set the color of your text.
+            </p>
+            <blockquote>
+                <code>font-size</code>
+            </blockquote>
+            <p>
+                We can’t use width or height for text, but we can determine the size of the font used. You can use
+                any size unit here that you would use with a font in a word processor (px, em, in, and etc). Px or
+                pixel is the most popular.
+            </p>
+            <h3>Introduction to the Box Model</h3>
+            <p>
+                We can consider all html elements to be boxes. The make-up of each box is the content, padding,
+                border, and margin. This is known as the Box Model.
+            </p>
+            <figure>
+                <img src="images/html_css_fundamentals/box_model_example.gif"
+                     alt="Box model example">
+            </figure>
+            <blockquote>
+                <code>height</code> and <code>width</code>
+            </blockquote>
+            <p>
+                We can tell the browser exactly how wide and how tall we want our element (content) to be. This is
+                used in <code>div</code>s, <code>img</code>s, and other height-based elements (in order to determine
+                the size of text, we will
+                need to use a different styling property). Size values can be in lots of different measures, but the
+                most common is the pixel (“px”).
+            </p>
+            <figure>
+                <img src="images/html_css_fundamentals/CSS_sizing_example.png"
+                     alt="CSS sizing code example">
+            </figure>
+            <blockquote>
+                <code>margin</code>
+            </blockquote>
+            <p>
+                The margin is an invisible area that surrounds your element. This is the outermost area in what we
+                refer to as the <code>box model</code>
+            </p>
+            <blockquote>
+                <code>border</code>
+            </blockquote>
+            <p>
+                Border will set a border around your element. You can determine the size, color, and style of the
+                border. It will be set up in this order: width, style, color (a list of border styles can be found
+                here: <a href="https//developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/border</a>)
+                The border is outside the padding,
+                but inside the margin.
+            </p>
+            <figure>
+                <img src="images/html_css_fundamentals/css_border_example.png"
+                     alt="CSS border code example">
+            </figure>
+            <blockquote>
+                <code>padding</code>
+            </blockquote>
+            <p>
+                The padding is the transparent area between the border and the content. It is very similar to the
+                margin.
+            </p>
+            <h3>Dig Deeper</h3>
+            <ul>
+                <li><a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy: Learn CSS</a> A
+                    beginners CSS tutorial
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN: CSS</a> MDN CSS
+                    documentation
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <p>After complete the project, share your codepen link, so I can review it <abbr>:)</abbr></p>
+            <ul>
+                <li><a href="https://codepen.io/jakepintu/pen/LYYJyyz" target="_blank">HTML and CSS</a></li>
+            </ul>
+            <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="iampika"
+               data-slug-hash="LYYJyyz" data-preview="true"
+               style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+               data-pen-title="HTML and CSS Fundamentals">
+  <span>See the Pen <a href="https://codepen.io/iampika/pen/LYYJyyz">
+  HTML and CSS Fundamentals</a> by Mahendra Choudhary (<a href="https://codepen.io/iampika">@iampika</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <p>A quiz in which you determine what the specific style rule is for the specified selector.</p>
+        </section>
+        <footer>
+            <table>
+                <caption>Article info</caption>
+                <thead>
+                <tr>
+                    <th>Written by</th>
+                    <th>Published on (date)</th>
+                    <th>Published on (blog)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mahendra Choudhary</td>
+                    <td>08-11-2020</td>
+                    <td><a href="https://medium.com/@iampika/html-and-css-fundamentals-6b8f7d90911b"
+                           target="_blank"
+                           rel="noopener noreferrer">Medium</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </footer>
+        <hr>
+        <section>
+            <h2>Comments</h2>
+            <form action="jesjesjes.php" method="post">
+                <div>
+                    <input id="input_email" type="email" name="email" required />
+                    <label for="input_email">Email</label>
+                </div>
+
+                <div>
+                    <textarea id="input_comment" rows="3" spellcheck="false" maxlength="300" required></textarea>
+                    <label for="input_comment">Comment</label>
+                </div>
+
+                <input type="submit" value="Plaats comment">
+            </form>
+            <p>
+                Thanks, this really helped me getting started with web development!
+            </p>
+            <p>
+                Will there be an article about <code>flex</code> and <code>grid</code>?
+            </p>
+            <p>
+                I don't know why I read this... I don't even want to program
+            </p>
+        </section>
+    </article>
+</main>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script src="scripts/mousetracker.js"></script>
 </body>
 </html>

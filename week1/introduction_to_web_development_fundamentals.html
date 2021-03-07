@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Youp van Leeuwen"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript, IWDER"/>
+    <meta name="description" content="Week 1 assignment IWDER"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Introduction to Web Development Fundamentals</title>
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Material+Icons&family=Montserrat:wght@400&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Written by AI</a></li>
+        <li><a href="html_css_fundamentals.html"><abbr>HTML</abbr> & CSS fundamentals</a></li>
+        <li><a href="introduction_to_web_development_fundamentals.html">Intro to Web Development</a></li>
+        <li><p id="swipe_message">Swipe up to close the navigation</p></li>
+    </ul>
+</nav>
+<main>
+    <h1>Youp's mooie artikelen</h1>
+    <article>
+        <h2>Introduction to Web Development Fundamentals</h2>
+        <section>
+            <p>
+                This lesson will explore the question <q>What does it mean to be a software engineer?</q> through high
+                level
+                computer science ideas, as well as a basic introduction to web development and <abbr>HTML</abbr>.
+            </p>
+            <h4><strong>At the end of this article, you should be able to:</strong></h4>
+            <ul>
+                <li><p>Start thinking like a software engineer</p></li>
+                <li>
+                    <p>
+                        Explain what web development is and the roles of <abbr>HTML</abbr>, <abbr>CSS</abbr>, and
+                        JavaScript
+                        in creating web content
+                    </p>
+                </li>
+                <li><p>Use <abbr>HTML</abbr> code to create a basic webpage</p></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Learn</h3>
+            <blockquote>Learn to start thinking like a software engineer</blockquote>
+            <h3>Overview</h3>
+            <p>
+                Software engineers use computer programming languages to build interesting tools by “speaking” directly
+                to the computer.
+            </p>
+            <p>
+                What is a programming language? What types of tasks can be accomplished using code? How is it similar or
+                different from the human languages we speak? And how do programmers continue to grow their skillset to
+                dynamically solve the problems that arise on the job?
+            </p>
+            <p>
+                These questions will be addressed in this objective. You should come away with a basic understanding of
+                how to think like a computer programmer.
+            </p>
+            <h3>What is a software engineer?</h3>
+            <p>
+                In the most direct sense, a software engineer is someone who writes computer code in order to create and
+                maintain software. Software engineers must understand computer languages in order to build software, but
+                more importantly, they need to be able to think on their feet. Software engineers are often required to
+                maintain, expand, and debug existing codebases. They also may be asked to learn new languages or
+                frameworks on the job. The greatest skill a software engineer must possess is being able to stay calm in
+                the face of a complex problem, and using his or her own creativity (and with the aid of online
+                resources), he or she finds the solution to that problem.
+            </p>
+        </section>
+        <section>
+            <h3>How do we communicate with computers to accomplish tasks?</h3>
+            <p>
+                Computers are everywhere: in our office, in our pocket, in our cars, etc. We have become so accustomed
+                to having them in our everyday lives that we often fail to recognize how complex they truly are. Many
+                people never stop to ask how these devices work, as if assuming they are running on magic. What we often
+                fail to realize is that every computer is following instructions that a human wrote for it in a set of
+                languages that computers understand. Knowing these languages, a programmer can instruct computers to do
+                almost anything imaginable — build a website, create an <abbr>AI</abbr> chess player, store and retrieve
+                data in a
+                database, and even drive our cars for us.
+            </p>
+            <p>
+                While the specifics can look wildly different based on what type of task we’re trying to accomplish and
+                what language we’re working with, there are three basic steps to writing code:
+            </p>
+            <ol>
+                <li>understand the rules of the language</li>
+                <li>use those rules to construct a set of instructions (write a program)</li>
+                <li>allow the computer to read those instructions (execute the program)</li>
+            </ol>
+        </section>
+        <section>
+            <h3>How do we learn a programming language?</h3>
+            <p>
+                Learning your first computer language can be intimidating. It requires a level of precision that we may
+                not be used to. However, just like human languages, the more programming languages you learn, the easier
+                it gets.
+            </p>
+            <p>
+                In most computer languages the core building blocks are keywords and syntax. Keywords are special words
+                built into the language that cue the computer as to what your intentions are. For example, in JavaScript
+                the keyword ‘const’ tells the computer that you are about to store a piece of data in memory. These
+                keywords are built into the language and are designed to accomplish specific tasks. Syntax is a built-in
+                system of “grammar” that each language has. It tells us how we are supposed to construct commands, such
+                as the word order and the use of symbols and punctuation (such as brackets, semicolons, and equal
+                signs).
+            </p>
+            <p>
+                By knowing the keywords and symbols in a language (syntax) we can construct valid commands which give
+                the computer precise instructions on how to execute certain tasks.
+            </p>
+            <p>
+                Luckily, each language has its keywords and syntax well documented online. Languages have official
+                reference pages where you can see lists of keywords and examples of how to use them. We can use a
+                variety of other resources as well, such as YouTube, StackOverflow, and coding blogs, to see examples
+                and explanations of these languages.
+            </p>
+        </section>
+        <section>
+            <h3>Which language should we learn?</h3>
+            <p>
+                There are a multitude of computer programming languages and they can differ in the grammar structure,
+                spelling, meanings of words, and intent. New languages are usually created when a group of programmers
+                finds the current languages lacking in an area they are working on. In turn, most languages are
+                specialized in specific areas (web development, gaming, databases, and etc).
+            </p>
+        </section>
+        <section>
+            <h3>Where do we write code (text editors and sandbox environments)?</h3>
+            <p>
+                We’ll be writing code directly in a text editor. Some great free text editors I recommend are VSCode,
+                Atom and Sublime. In this module, however, we will not need a text editor. We will be writing our code
+                directly in sandbox environments (e.g., CodePen and repl.it). Sandbox environments are websites designed
+                to allow you to write and immediately run small pieces of code. They are great learning tools for
+                beginners and excellent debugging tools for experts.
+            </p>
+        </section>
+        <section>
+            <h3>How do we execute code?</h3>
+            <p>
+                After we have written a bit of computer code, we must actually feed our instructions to the computer.
+                This process is called executing, or running, the code. The exact process of running code can vary
+                depending on the language and the task at hand. For example, a bit of HTML code can be run by opening an
+                HTML file using a web browser. However, if we were to open a C++ file directly in the browser, nothing
+                would happen.
+            </p>
+        </section>
+        <section>
+            <h3>Learn</h3>
+            <blockquote>
+                Learn to explain what web development is and the roles of HTML, CSS, and JavaScript in creating web
+                content
+            </blockquote>
+            <h3>What is web development?</h3>
+            <p>
+                Web development is a specific field of software engineering that focuses on building web pages. Web
+                pages, or web apps, are codebases that are downloaded and run in our web browser (e.g., Google Chrome)
+                each time a user navigates to the website address. This differs from other software which is usually
+                downloaded once and run as a standalone application on your computer or phone. Web development makes for
+                an exciting career, as a web development cycle is usually much shorter and you get to iterate over your
+                software at a much faster rate.
+            </p>
+            <p>
+                The major building blocks of the web are HTML, CSS, and JavaScript. We will be talking about all three
+                languages. We can also think of web development as being split into two main categories: front end and
+                back end. We will discuss what each entails.
+            </p>
+        </section>
+        <section>
+            <h3>What is meant by the term <code>front end</code>?</h3>
+            <p>
+                Everything you have ever seen on the web is considered ‘front end’. Front end is what we see when we
+                open a web page or app. Code is downloaded from a server and is rendered to the screen by a web browser.
+                What happens when we interact with the code is also considered front end. This is often referred to as
+                the ‘Presentation Layer’ or ‘Client’ in software development terms.
+            </p>
+            <p>
+                The front end is built out of three languages: HTML, CSS, and JavaScript. HTML allows us to put content
+                on our page: text, headers, images, buttons, links, and etc. CSS is used to style our page. It allows
+                the contents to have different text colors, background colors, as well as dealing with the positioning
+                of the content on the page. JavaScript makes our page dynamic. It allows for the content to change on a
+                mouse hover or click and also lets us submit data and have data rendered on our page (such as submitting
+                a new blog post or having your feed populated when you open Facebook).
+            </p>
+        </section>
+        <section>
+            <h3>What is meant by the term <code>back end</code>?</h3>
+            <p>
+                This term usually refers to what happens ‘behind the scenes’: servers, databases, etc. The back end is
+                the place we don’t see as users. This consists of data storage (databases) and servers running to
+                provide data for the front end. Back end can be a little harder to imagine, especially for someone
+                without much experience with it. Back end is commonly referred to as the ‘data access layer’ or ‘server’
+                within software development terms. The back end computes the data and content sent to the front end to
+                be used and displayed by your browser.
+            </p>
+            <p>
+                Back end server code can be written using JavaScript. However, it can be also written using many other
+                languages, such as Ruby, Java, or Python. The database logic required in back end development often
+                utilize a database language, such as SQL or MongoDB.
+            </p>
+        </section>
+        <section>
+            <h3>What is a framework?</h3>
+            <p>
+                Real world web development relies heavily on the use of frameworks. Frameworks aren’t exactly new
+                languages, but are more like add-ons to existing languages. These frameworks slightly change the rules
+                and syntax of a language, but save us a lot of time and effort in writing web development code.
+            </p>
+            <p>
+                For example, a CSS framework like Bootstrap will require us to write our CSS using slightly different
+                rules than regular (vanilla) CSS. It will also limit the level of customization we can do using CSS. But
+                the drawbacks are often worth it, because Bootstrap makes styling our sites far easier and allows us to
+                create mobile-friendly pages with minimal effort.
+            </p>
+        </section>
+        <section>
+            <h3>What are unique challenges web developers face?</h3>
+            <p>
+                While there are a lot of pros in developing software for use on the web, there are some cons as well.
+                These can be unique challenges to a web developer.
+            </p>
+            <p>
+                Load times. Do you ever go to a website and it takes forever to load? What is your reaction? We usually
+                get frustrated and leave. In fact, most users will leave a site if it does not load for them in 15
+                seconds or less! As mentioned earlier, connection speed is a large hurdle to overcome when dealing with
+                web development. A user’s speed can range from very fast (Fiber optic) to slow (mobile 3G or satellite).
+                It is our job as web developers to take ALL users into account. Therefore, we learn tricks to keep users
+                engaged while our code is being downloaded, and learn to keep our code small so it can be easily
+                downloaded.
+            </p>
+            <p>
+                Different Browsers. Not only do we have to worry about load times, but also differences in browser
+                technology. Mobile browsers are different than desktop (or laptop) browsers. Older browsers (many
+                computers still use Windows XP and IE9) are extremely different than newer browsers, and developing for
+                each provides a unique challenge. Ultimately you will need to make sacrifices and not support some
+                browsers (which is a call marketing department will make) but you should be able to code for the browser
+                you do support.
+            </p>
+            <p>
+                Accessibility. If you are not a person that uses an accessibility device to consume software on the web,
+                then you may have no idea these exist. Screen readers, alternative keyboards/navigation devices, devices
+                for the hearing impaired, the color blind, font sizes for visually impaired people, are all concepts
+                that we tend to not think about. As a web developer, you will need to start thinking about these users
+                not only from a human decency perspective, but also because these users make up a non-insignificant
+                market share. There are also legal issues that require accessibility.
+            </p>
+        </section>
+        <section>
+            <h3>Learn</h3>
+            <blockquote>Learn to use HTML code to create a basic webpage</blockquote>
+            <h3>Overview</h3>
+            <p>
+                One of the core building blocks of web development is the HTML language. HTML is used to put content on
+                a web page: everything from text to images to buttons. We will be learning the basic rules of the HTML
+                language to construct a simple web page.
+            </p>
+            <h3>What is HTML?</h3>
+            <p>
+                As already mentioned, HTML (which stands for Hyper Text Markup Language) is one of the languages we use
+                for web development. HTML was created as a language when the first visual web browsers came into
+                existence in the early 90s. It is read by the browser and then used as a blueprint for displaying
+                information on your screen.
+            </p>
+            <p>
+                HTML is not considered a “programming language”, but is rather what we call a “markup language”. This
+                means that it is specifically designed to render data in a graphical form (rather than execute tasks).
+            </p>
+        </section>
+        <section>
+            <h3>What are HTML elements?</h3>
+            <p>
+                HTML is made up of elements. We can think of elements as being boxes of content on our web page.
+                Different types of content will be contained in different boxes. For example, we use certain elements
+                for headers, other elements for images, and still other elements for text.
+            </p>
+            <p>
+                We will be focusing on four different display elements today: division elements (divs), headers,
+                paragraphs, and spans.
+            </p>
+        </section>
+        <section>
+            <h3>How do we use CodePen?</h3>
+            <p>
+                We will be writing our HTML code in a sandbox environment called CodePen. CodePen is a great learning
+                tool (as well as a great place to tinker with small chunks of code on the job). We write HTML directly
+                in the HTML section of CodePen and the elements that we create will render in real-time onscreen. This
+                is much faster than having to save our file and reload it in the browser every time we make a change.
+            </p>
+            <p>
+                CodePen also allows us to leave out a couple of critical elements: the html, head, and body elements.
+                These are important to understand when we start writing HTML code in our text editors, but for now, we
+                can ignore them, because CodePen handles them automatically.
+            </p>
+        </section>
+        <section>
+            <h3>What are tags?</h3>
+            <p>
+                To create an HTML element, we need to use tags. Each element has a specific tag name such as div, p, or
+                span. These tag names are built into the language and must be written exactly as expected in order for
+                our HTML to render correctly. For example, paragraph is not a valid tag name in HTML, but p is. We can
+                use online documentation to verify which tag names exist and what elements they are used for.
+            </p>
+            <p>
+                Once we know our tag name, we can create an opening tag using brackets: These tags must be syntactically
+                precise: an opening bracket + a tag name + a closing bracket. A
+                closing tag looks almost exactly the same, except with a backslash before the tag name. So a closing
+                paragraph tag would look like this:. Thus, to create a paragraph, we need only write an opening tag
+                and a closing tag:
+            </p>
+            <figure>
+                <img src="images/introduction_to_web/empty_p_example.png" alt="Empty p tag example">
+            </figure>
+            <p>
+                Of course, a paragraph isn’t very interesting without text. The content of an HTML element always goes
+                in between the two tags. So a paragraph containing some content would look like this:
+            </p>
+            <figure>
+                <img src="images/introduction_to_web/p_example.png" alt="P tag example">
+            </figure>
+            <p>
+                <strong>So what are divs, headers, paragraphs, and spans exactly?</strong>
+            </p>
+            <p>
+                We will be focusing today on four types of display elements. Now that we understand how to create these
+                elements, let’s explore their use cases.
+            </p>
+            <p>
+                The p (“paragraph”) element. This element is meant for holding text. By default, it will render text to
+                the screen on a new line.
+            </p>
+            <figure>
+                <img src="images/introduction_to_web/p_example.png" alt="P tag example">
+            </figure>
+            <p>
+                The div element is a generic container. It is used primarily for grouping other HTML elements together.
+                It is invisible by default but can be used to position or style a group of elements.
+            </p>
+            <figure>
+                <img src="images/introduction_to_web/div_example.png" alt="DIV tag example">
+            </figure>
+            <p>
+                The span element is a generic text container. It does not create a new line like the p element does.
+                This element is invisible by default but can be used for styling words or phrases within a larger body
+                of text.
+            </p>
+            <figure>
+                <img src="images/introduction_to_web/span_example.png" alt="SPAN tag example">
+            </figure>
+            <p>
+                These are header tags there are intended to be used as a way to present the subject matter of the page.
+                1 is the most important and 6 is the least important. By default, 1 will be the largest, 2 will be the
+                next largest, and etc.
+            </p>
+            <figure>
+                <img src="images/introduction_to_web/h_example.png" alt="Heading tag example">
+            </figure>
+        </section>
+        <section>
+            <h3>How can I inspect an existing web page?</h3>
+            <p>
+                When learning HTML, it can be useful to investigate existing web pages. There is a tool built into every
+                browser called the inspector that allows us to do this. Just right-click any element on a webpage and
+                select “inspect” or “inspect element”, depending on the browser. This will pop up a sidebar that allows
+                you to explore all the HTML on the web page. It can be overwhelming for a new developer, but it is a
+                good way to get a taste of what goes into building a complex, production web page.
+            </p>
+        </section>
+        <section>
+            <h3>Prepare</h3>
+            <iframe height="315" src="https://www.youtube.com/embed/hu-q2zYwEYs"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </section>
+        <section>
+            <h3>Project</h3>
+            <p>
+                This project will be a small HTML page about you! Please ‘fork’ the original codepen so you can save
+                your
+                work! After complete the project, share your codepen link, so I can review it 😁
+            </p>
+            <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="result" data-user="iampika"
+               data-slug-hash="XWWPMOJ"
+               style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+               data-pen-title="Intro to Web Development Exercise">
+                <span>See the Pen <a href="https://codepen.io/iampika/pen/XWWPMOJ">
+                    Intro to Web Development Exercise</a> by Mahendra Choudhary (<a href="https://codepen.io/iampika">@iampika</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+        </section>
+        <hr/>
+        <footer>
+            <p>
+                Written by: Mahendra Choudhary | 13-11-2019<br/>
+                <a href="https://medium.com/swlh/introduction-to-web-development-fundamentals-b89f5c91ed3f"
+                   target="_blank"
+                   rel="noopener noreferrer">Medium</a>
+            </p>
+        </footer>
+    </article>
+</main>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script src="scripts/mousetracker.js"></script>
+</body>
+</html>

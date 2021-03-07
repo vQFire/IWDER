@@ -6,6 +6,7 @@
     --nav-halve-closed-width: calc(var(--nav-closed-width) / 2);
     --nav-open-width: 325px;
     --nav-animation-duration: .2s;
+    --mobile-nav-height: 75px;
 }
 
 html, body {
@@ -18,9 +19,15 @@ html, body {
 
 body {
     background-color: var(--primary-bg);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-h1, h2, h3, h4, p, a, figcaption, ol li::marker {
+h1, h2, h3, h4, p, a, figcaption, ol li::marker, li, label, input, textarea, td, th, caption {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -64,8 +71,8 @@ h1 {
     border-radius: 15px;
 }
 
-.page-wrapper {
-    margin: 0 16px;
+main {
+    margin: 0 16px calc(var(--mobile-nav-height) + 10px) 16px;
 }
 
 /* NAV */
@@ -140,6 +147,10 @@ nav li:nth-child(2) a::before {
     content: 'code';
 }
 
+nav li:nth-child(3) a::before {
+    content: 'school';
+}
+
 nav a:hover {
     text-shadow: 2px 2px rgba(0,0,0,0.45);
 }
@@ -156,6 +167,67 @@ nav a:focus {
             0 0 0 14px white
     ;
 
+}
+
+nav li:nth-last-child(1) {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        top: calc(100% - var(--mobile-nav-height));
+        left: 0;
+
+        height: var(--mobile-nav-height);
+        width: 100%;
+
+        transition: top .3s ease, height .3s ease;
+    }
+
+    nav:hover {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav li:nth-last-child(1) {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 900;
+    }
+
+    nav a {
+        padding: 10px 15px;
+    }
+
+    nav a::before {
+        padding: 10px 16px;
+    }
+
+    nav.active {
+        top: 0;
+        height: 100%;
+    }
+
+    nav.active ul {
+        height: 100%;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        row-gap: 15px;
+    }
+
+    nav.active li {
+        display: inline-block;
+    }
 }
 
 /* ARTICLE */
@@ -196,6 +268,54 @@ article a:hover {
     color: var(--secondary-clr);
 }
 
+section::after {
+    display: block;
+    content: "more_horiz";
+    font-family: 'Material Icons', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+article footer {
+    display: flex;
+    justify-content: center;
+}
+
+caption {
+    text-decoration: underline;
+}
+
+th {
+    padding: 0 8px;
+}
+
+td {
+    text-align: center;
+    margin: 0 4px;
+}
+
+section:last-of-type::after {
+    content: '' !important;
+    display: none;
+}
+
+section:last-of-type p {
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+
+    display: flex;
+    align-items: center;
+}
+
+section:last-of-type p::before {
+    content: 'account_circle';
+    font-family: 'Material Icons', sans-serif;
+    font-size: 28px;
+    padding-right: 5px;
+}
+
 .list_item_image {
     list-style-type: none;
 }
@@ -206,4 +326,75 @@ article a:hover {
     margin-left: -5px;
     border-left: 2px solid black;
     border-radius: 6px;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form div:focus {
+    background-color: red;
+}
+
+label {
+    position: absolute;
+    left: 16px;
+    top: 25px;
+    transform: translateY(-50%);
+    transition: transform .3s ease;
+}
+
+input, textarea {
+    padding: 20px 16px 6px 16px;
+    border-color: transparent;
+    border-bottom: 2px solid var(--primay-clr);
+    background-color: var(--primary-bg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+
+    transition: border-bottom-color .3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-radius: 15px 15px 0 0;
+}
+
+input:focus + label, input:valid + label, input:invalid:focus + label,
+textarea:focus + label, textarea:valid + label, textarea:invalid:focus + label {
+    transform:
+        translateY(-106%)
+        translateX(-10%)
+        scale(0.75);
+}
+
+input:invalid:focus, textarea:invalid:focus {
+    border: 2px solid transparent;
+    border-bottom: 2px solid red !important;
+}
+
+input[type="submit"] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    background-color: limegreen;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type="submit"] + label {
+    transform: translateY(0);
 }
